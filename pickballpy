@@ -1,0 +1,15 @@
+import random 
+
+def pickball():
+    balls = [1,2,3,4,5,6]
+    result = random.choice(balls)
+    pro = balls.count(6)/ len(balls)
+
+    print("Probablity of getting the 6 ball is   ")
+    print(pro)
+    if result == 6: 
+        print("You have gotten the 6 ball")
+    else:
+        print("Better Luck Next Time!!")
+
+pickball()
